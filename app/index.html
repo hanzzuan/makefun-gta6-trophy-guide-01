@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="title">
+    <h1>LEONIDA</h1>
+    <p class="sub">GTA VI Trophy Guide &amp; Tracker — every one of the 55 PlayStation 5 trophies, with a cited guide for each</p>
+  </div>
+  <div class="progress" id="progressBox">
+    <div class="bar"><div class="fill" id="progressFill"></div></div>
+    <p id="progressText">0 of 55 earned</p>
+  </div>
+</header>
+
+<section class="facts" id="facts" aria-label="Trophy set at a glance"></section>
+
+<p class="missable" id="missableBanner"><strong>One missable trophy:</strong> Positive Mental Attitude — do Lucia&rsquo;s balcony meditation in Chapter&nbsp;1 and keep a Chapter&nbsp;1 save. <button type="button" id="showMissable">Show it</button></p>
+
+<section class="roadmap" id="roadmap">
+  <h2>Road to the Platinum — Vice Got a Price!</h2>
+  <div class="stages" id="stages"></div>
+  <p class="checklist-note" id="checklistNote"></p>
+  <ul class="warnings" id="warnings"></ul>
+</section>
+
+<div class="controls" id="controls">
+  <input id="search" type="search" placeholder="Search trophies, guides, places…" aria-label="Search trophies">
+  <div class="kinds" id="kinds" role="group" aria-label="Filter by kind"></div>
+  <label class="grade-label">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="spoiler"><input id="spoiler" type="checkbox"> Spoiler-free story trophies</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+</div>
+
+<main>
+  <div class="cards" id="cards"></div>
+  <p class="empty" id="empty" hidden>No trophies match these filters.</p>
+</main>
+
+<footer>
+  <p><strong>About the list.</strong> Trophy names, descriptions and grades are the official ones as published on PlayStation Network, cross-checked on Exophase and PSNProfiles on 18 November 2026. Every guide is written for this entry in our own words and cites its sources beside it — a source is cited, never copied.</p>
+  <p><strong>Sources.</strong> <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a> · <a href="https://www.powerpyx.com/gta-6-100-completion-checklist-guide/">PowerPyx — 100% Completion Checklist &amp; Guide</a> · <a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series">GTABase — GTA 6 Achievements &amp; Trophies List</a></p>
+  <p><strong>Offline.</strong> This guide is plain static files. It loads nothing over the network, saves your progress in this browser only (localStorage), and never asks for an account, a wallet or a password.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
